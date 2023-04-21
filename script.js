@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Neon animated cursor
 function initNeonCursor() {
-  const neonCursor = window.neonCursor.default;
+  const neonCursor = threejsToys.neonCursor;
   neonCursor({
     el: document.getElementById('app'),
     shaderPoints: 16,
