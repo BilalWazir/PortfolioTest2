@@ -9,24 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Custom cursor tracking
-const cursor = document.querySelector('.cursor');
-const menuItems = document.querySelectorAll('nav a');
-
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.pageX + 'px';
-  cursor.style.top = e.pageY + 'px';
-});
-
-menuItems.forEach((item) => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('cursor-grow');
-  });
-  item.addEventListener('mouseleave', () => {
-    cursor.classList.remove('cursor-grow');
-  });
-});
-
 // Neon animated cursor
 function initNeonCursor() {
   const neonCursor = window.neonCursor.default;
