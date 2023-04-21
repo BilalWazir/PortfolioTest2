@@ -44,9 +44,10 @@ nav ul li {
   margin: 0 10px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+nav ul li a:hover {
+  color: #fdbb2d;
+  text-decoration: underline;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 .content {
