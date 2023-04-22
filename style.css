@@ -46,7 +46,7 @@ nav ul li {
 
 nav ul li a:hover {
   color: #fdbb2d;
-  text-decoration: underline;
+  text-decoration: overline;
   transition: color 0.3s, text-decoration 0.3s;
 }
 
