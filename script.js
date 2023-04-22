@@ -27,3 +27,11 @@ const typingTexts = document.querySelectorAll('.typing-text');
 typingTexts.forEach((text) => {
   type_observer.observe(text);
 });
+
+
+
+function scrollToSection(selector) {
+  document.querySelector(selector).scrollIntoView({
+    behavior: 'smooth'
+  });
+}

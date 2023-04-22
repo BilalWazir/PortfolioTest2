@@ -21,32 +21,90 @@
     <main>
       <section id="home">
         <div class="content">
-          <h1 class="typing-text">Bilal's Portfolio</h1>
+          <h1>Bilal's Portfolio</h1>
+          <p> "Simplicity is the ultimate sophistication." - Leaonardo da Vinci</p>
+          <button class="scroll-button" onclick="scrollToSection('#about')">About Me</button>
         </div>
       </section>
       <section id="about">
         <div class="content">
           <h2 class="typing-text">About Me</h2>
-          <p>Who is Bilal?</p>
-          <p>Web Developer?</p>
-          <p>Illustrator?</p>
-          <p>App Developer?</p>
-          <p>Hello, my name is Bilal Wazir, a driven and enthusiastic Business Information Technology and Systems student at Curtin University in Perth, Western Australia. With a strong passion for technology, entrepreneurship, cars, and music, I am constantly seeking to expand my knowledge and skills in these areas.</p>
-          <p>As an individual who thrives on innovation and creative problem-solving, I am eager to explore the ever-evolving world of technology and business. Under the guidance of my mentor, Mr. Michael Borck, I am committed to discovering novel ways to approach coding and the application of technology in various industries. </p>
-          <p>My fascination with cars and music feeds my curiosity and creativity, inspiring me to find connections between these diverse interests and my academic pursuits. By combining my passions, I aim to create unique and impactful solutions that contribute to the growth of the tech and business sectors.</p>
-          <p>In my quest for continuous learning and development, I am excited to embrace new challenges and collaborate with like-minded individuals who share my enthusiasm for technology, entrepreneurship, and the pursuit of excellence. With a strong foundation in Business Information Technology and Systems, I am eager to forge a path where I can make a lasting and meaningful impact in the world of technology and beyond.</p>
+          <p>Hello, my name is Bilal Wazir. I am a Business Information Technology and Systems student at Curtin University in Perth, Western Australia. I am passionate about all things tech, cars, music, and commerce. I am always wanting to learn more about technology, business, and creative ways to code with my mentor, Mr. Michael Borck. As an entrepreneur and tech enthusiast, I strive to innovate and create impactful solutions in various fields.</p>
+          <button class="scroll-button" onclick="scrollToSection('#projects')">Projects</button>
         </div>
       </section>
       <section id="projects">
         <div class="content">
           <h2 class="typing-text">Projects</h2>
-          <p>...</p>
+          <ul class="project-list">
+            <li class="project">
+              <a href="https://bilalwazir.github.io/ISYS3004-RPS/" target="_blank">
+                <img src="/Users/17384254/Downloads/PortfolioTest2-main/Resources/Screenshot 2023-04-22 at 11.56.26 pm.png" alt="Project 1 Thumbnail" />
+              </a>
+              <div class="project-description">
+                <h3>Rock, Paper, Scissor</h3>
+                <p>A simple game of Rock, Paper, Scissor that we developed to showcase the different HTML instructions that can create a working and functional webpage </p>
+              </div>
+            </li>
+            <li class="project">
+              <a href="https://github.com/username/project-2" target="_blank">
+                <img src="path/to/project-2-thumbnail.jpg" alt="Project 2 Thumbnail" />
+              </a>
+              <div class="project-description">
+                <h3>Project 2</h3>
+                <p>Description of Project 2 goes here...</p>
+              </div>
+            </li>
+            <li class="project">
+              <a href="https://github.com/username/project-2" target="_blank">
+                <img src="path/to/project-2-thumbnail.jpg" alt="Project 3 Thumbnail" />
+              </a>
+              <div class="project-description">
+                <h3>Project 3</h3>
+                <p>Description of Project 3 goes here...</p>
+              </div>
+            </li>
+            <li class="project">
+              <a href="https://github.com/username/project-2" target="_blank">
+                <img src="path/to/project-2-thumbnail.jpg" alt="Project 4 Thumbnail" />
+              </a>
+              <div class="project-description">
+                <h3>Project 4</h3>
+                <p>Description of Project 4 goes here...</p>
+              </div>
+            </li>
+            <!-- Add more projects as needed -->
+          </ul>
+        </div>
+      </section>
+          <button class="scroll-button" onclick="scrollToSection('#contact')">Contact Me</button>
         </div>
       </section>
       <section id="contact">
         <div class="content">
           <h2 class="typing-text">Contact</h2>
-          <p>...</p>
+          <p>To get in touch, please fill out the form below and I will get back to you as soon as possible.</p>
+          <form id="contact-form">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div>
+              <label for="number">Phone Number:</label>
+              <input type="tel" id="number" name="number" placeholder="Your Phone Number">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div>
+              <label for="notes">Notes:</label>
+              <textarea id="notes" name="notes" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>

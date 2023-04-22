@@ -37,7 +37,7 @@ nav ul {
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 10px;
+  padding: 14px;
 }
 
 nav ul li {
@@ -56,7 +56,7 @@ nav ul li a:hover {
   margin: 0 auto;
   text-align: center;
   background: rgba(0, 0, 0, 0.30);
-  border-radius: 20px;
+  border-radius: 22px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -71,11 +71,20 @@ section {
 h1, h2 {
   color: white;
   text-decoration: underline;
+  font-size: 24px;
+  
+}
+
+h3 {
+  color: white;
+  text-decoration: underline;
+  font-size: 19px;
   
 }
 
 p, a {
   color: white;
+  font-size: 18px;
 }
 
 footer {
@@ -96,7 +105,7 @@ footer {
 }
 
 .typing {
-  animation: typing 1s steps(30, end) forwards;
+  animation: typing 2s steps(30, end) forwards;
 
 }
 
@@ -107,4 +116,100 @@ footer {
   to {
       width: 100%;
   }
+}
+
+
+/* Text box CSS code*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #eda917;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fdbb2d;
+}
+
+
+.scroll-button {
+  background-color: #fdbb2d;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: #eda917;
+}
+
+
+/* Code for project linking and thumbnail goes here*/
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project a img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.project-description {
+  max-width: 300px;
+}
+
+.project-description h3 {
+  margin: 0;
+  margin-bottom: 10px;
 }
