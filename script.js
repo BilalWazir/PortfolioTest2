@@ -40,3 +40,8 @@ const slide_observer = new IntersectionObserver(entries => {
 
 slide_observer.observe(document.querySelector('.animated-text'));
 type_observer.observe(document.querySelector('.typing-text'));
+
+const typingTexts = document.querySelectorAll('.typing-text');
+typingTexts.forEach((text) => {
+  type_observer.observe(text);
+});
