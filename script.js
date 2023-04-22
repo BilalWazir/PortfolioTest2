@@ -10,3 +10,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+/*typing text animation code*/
