@@ -213,3 +213,22 @@ button:hover {
   margin: 0;
   margin-bottom: 10px;
 }
+
+
+/* Style for the Repository Buttons on Projects*/
+
+.repo-button {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.repo-button:hover {
+  background-color: #fdbb2d;
+  color: #333;
+}
